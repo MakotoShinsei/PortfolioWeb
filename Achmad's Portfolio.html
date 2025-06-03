@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achmad's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="CSSTesting.css">
+</head>
+<body>
+    <div class="topnav">
+        <div class="h1">
+            <img src="https://media-cgk2-2.cdn.whatsapp.net/v/t61.24694-24/454723535_559537279920858_6512255450754101676_n.jpg?ccb=11-4&oh=01_Q5Aa1gHbcRsVJt_4AP12HTk699zQspHgRP4MF4vULx4w7EClkw&oe=684B8998&_nc_sid=5e03e0&_nc_cat=105"
+            alt="Achmad Khoerudin Profile" class="profile-pic"> <b>Achmad Khoerudin</b>
+        </div>
+        <a href="#contact-section"> <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/new-contact.png"
+             alt="Contact" class="logo-1">Contact</a>
+        <a href="#skills-section"> <img src="https://img.icons8.com/ios-filled/50/FFFFFF/learning.png"
+             alt="Skills" class="logo-1">Skills</a>
+        <a href="#experience-section"> <img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/development-skill.png"
+             alt="Experience">Experience</a>             
+        <a href="#about-section"> <img src="https://img.icons8.com/ios-filled/50/FFFFFF/about-me.png"
+             alt="About Me" class="logo-1">About Me</a>
+    </div>
+
+    <div class="content" id="about-section"> <h2>Halo,</h2>
+        <p>Saya adalah siswa yang memiliki ketertarikan di bidang Network System Administration dan Mikrotik,</p>
+        <p>memiliki kemampuan berkomunikasi yang baik dan semangat dalam mempelajari hal-hal yang baru!.</p>
+    </div>
+
+    <div class="content-1" id="experience-section"> <h2>Experience</h2>
+        <ul>
+            <li>SMPN 39 Bandung(2022-2023) - Literacy Club Member</li>
+
+            <li>SMKN 4 Bandung(2024-now) - Basketball Club Member</li>
+            </ul>
+    </div>
+
+    <div class="content-2" id="skills-section"> <h2>Skills</h2>
+        <ul>
+            <li>Mikrotik Configuration</li>
+            <li>Linux (Web Server, Mail Server)</li>
+            <li>Teamwork</li>
+            <li>English Language</li>
+            </ul>
+    </div>
+
+    <div class="footer" id="contact-section"> <h2>Contact me with :</h2>
+        <ul>
+            <li>Email : 4chmad.id@gmail.com</li>
+            <li>Phone Number : +62 851-5674-6634</li>
+            <li>Social Medias :</li>
+        </ul>
+    </div>
+
+    <script>
+        function LuasSegitiga() {
+        var Alas = parseFloat
+        (document.getElementById ("AngkaPertama").value);
+
+        var Tinggi = parseFloat(document.getElementById ("AngkaKedua").value);
+
+        var luas = 0.5 * Alas * Tinggi;
+
+        if (!isNaN(luas)) {
+        document.getElementById ("hasil").innerHTML =
+         "Luas Segitiga Adalah : " + luas;
+         
+    } else {
+        document.getElementById ("hasil").innerHTML =
+         "Masukkan kedua nilai dengan benar.";
+    }
+}
+    function KelilingSegitiga() {
+        var Alas = parseFloat
+        (document.getElementById ("AngkaPertama").value);
+
+        var Tinggi = parseFloat
+        (document.getElementById ("AngkaKedua").value);
+
+        var keliling = 3 * Alas;
+
+        if (!isNaN(keliling)) {
+            document.getElementById ("hasil").innerHTML =
+             "Keliling Segitiga Adalah : " + keliling;
+
+        } else {
+            document.getElementById ("hasil".innerHTML)
+            "Masukkan kedua nilai dengan benar.";
+        }
+    }
+
+</script>
+
+<p>
+<form>
+      Masukan Panjang Alas : <input type="number" id="AngkaPertama" /> <br>
+      Masukan Tinggi : <input type="number" id="AngkaKedua" /><br />
+
+      <input type="button" onClick="LuasSegitiga()" value="Hitung Luas" /><br/>
+      <input type="button" onClick="KelilingSegitiga()" value="Hitung Keliling"/>
+    </form>
+    <p>
+      Hasil adalah : <br />
+      <span id="hasil"></span>
+    </p>
+</p>
+</body>
+</html>
